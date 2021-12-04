@@ -1,3 +1,4 @@
+#command setup list
 sudo lsblk
 sudo file -s /dev/xvdf
 sudo mkdir /plane
@@ -41,5 +42,5 @@ mkdir wallet
 cd /plane/wallet
 mkdir log
 
-ssh -i "c:/Users/gabat/Documents/Plan A/AWS/PAB/Key/plana-key-ca.pem" ubuntu@ec2-99-79-143-96.ca-central-1.compute.amazonaws.com
+
 https://github.com/chadidbarnero/bankathon_elsalv2021
