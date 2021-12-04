@@ -1,0 +1,117 @@
+degree side print hundred auction nuclear rocket floor hint roast trial enemy
+=== WALLET ===
+ ID                             1
+ Name                           Wallet2
+ Owner
+ Scheme                         bip32
+ Multisig                       False
+ Witness type                   legacy
+ Main network                   bitcoin
+ Latest update                  None
+
+= Wallet Master Key =
+ ID                             1
+ Private                        True
+ Depth                          0
+
+- NETWORK: bitcoin -
+- - Keys
+    6 m/44'/0'/0'/0/0              12TyHRyStuweukkBxgWrEtdezETRRRgmwN            address index 0                        0.00000000 ₿
+    9 m/44'/0'/1'/0/0              1E8kRxttKpp327Rg2ESjqmV3sBDdikoaWB            address index 0                        0.00000000 ₿
+   11 m/44'/0'/1'/1/0              1DeCcY9WzsAs3nZU4sesA6FcZRgYh9zm8X            address index 0                        0.00000000 ₿
+
+- - Transactions Account 0 (0)
+
+- - Transactions Account 1 (0)
+
+- NETWORK: litecoin -
+- - Keys
+   15 m/44'/2'/0'/0/0              LMaRcE3o7ckZ4SBL6Y8obksqXP87UmgDWm            address index 0                      0.00000000 LTC
+   17 m/44'/2'/0'/1/0              Lf1Foz1HWCDxS549rnyztK1kdQ3VLLGHKE            address index 0                      0.00000000 LTC
+
+- - Transactions Account 0 (0)
+
+= Balance Totals (includes unconfirmed) =
+
+
+
+---------------------------------------------------------------------
+
+tunnel dismiss glove scare riot voyage slow admit today novel since mobile
+=== WALLET ===
+ ID                             2
+ Name                           WalletTest
+ Owner
+ Scheme                         bip32
+ Multisig                       False
+ Witness type                   legacy
+ Main network                   testnet
+ Latest update                  None
+
+= Wallet Master Key =
+ ID                             18
+ Private                        True
+ Depth                          0
+
+- NETWORK: testnet -
+- - Keys
+   23 m/44'/1'/0'/0/0              mkhtTJCq2VcZFwJht5e2ibq4GuVqYkCh98            address index 0                     0.00000000 TBTC
+   26 m/44'/1'/1'/0/0              mzWtzyLGrqKmZq3wXyXycAyH9HLXt3ieFE            address index 0                     0.00000000 TBTC
+   28 m/44'/1'/1'/1/0              mfcLRxgpcc9iN45ttcin3GQtjZPjrruYv2            address index 0                     0.00000000 TBTC
+
+- - Transactions Account 0 (0)
+
+- - Transactions Account 1 (0)
+
+= Balance Totals (includes unconfirmed) =
+
+
+=== WALLET ===
+ ID                             2
+ Name                           WalletTest
+ Owner
+ Scheme                         bip32
+ Multisig                       False
+ Witness type                   legacy
+ Main network                   testnet
+ Latest update                  2021-11-25 23:18:38.798816
+
+= Wallet Master Key =
+ ID                             18
+ Private                        True
+ Depth                          0
+
+- NETWORK: testnet -
+- - Keys
+   23 m/44'/1'/0'/0/0              mkhtTJCq2VcZFwJht5e2ibq4GuVqYkCh98            address index 0                     0.00000000 TBTC
+   26 m/44'/1'/1'/0/0              mzWtzyLGrqKmZq3wXyXycAyH9HLXt3ieFE            address index 0                     0.00000000 TBTC
+   28 m/44'/1'/1'/1/0              mfcLRxgpcc9iN45ttcin3GQtjZPjrruYv2            address index 0                     0.00000000 TBTC
+   29 m/44'/1'/0'/0/1              mp8rgi7RN8XAYKszUBnRAb8CMZRmS1Gp2N            address index 1                     0.00000000 TBTC
+   30 m/44'/1'/0'/0/2              mrKQYMNVnH8QRKsm7VQiKGYx2aVFyDAp13            address index 2                     0.00000000 TBTC
+   31 m/44'/1'/0'/0/3              my2cF8fbrjgDssYnnBKmAsGYFboNynME3Q            address index 3                     0.00000000 TBTC
+   32 m/44'/1'/0'/0/4              mmq7Ai8Ro2tfK4LoeQqqJKW94hmEXZJdzT            address index 4                     0.00000000 TBTC
+   34 m/44'/1'/0'/1/0              mzLsMYNxcsgfzkVP7bGdQwm6SnDVtxCCkq            address index 0                     0.00000000 TBTC
+   35 m/44'/1'/0'/1/1              mt6DUHF8oWynEgqitVSFqFYQCZkjzfr1A2            address index 1                     0.00000000 TBTC
+   36 m/44'/1'/0'/1/2              mzq6SP8LdFAtoYdZ2JxHU44Wjk8zjFd7BV            address index 2                     0.00000000 TBTC
+   37 m/44'/1'/0'/1/3              mvubUwWqaR2RBtmg8Un4sWj43zXGadPYEF            address index 3                     0.00000000 TBTC
+   38 m/44'/1'/0'/1/4              mjJ587HYJ9fGdT2tXi2zyVSAvseNLnTsDV            address index 4                     0.00000000 TBTC
+
+- - Transactions Account 0 (0)
+
+- - Transactions Account 1 (0)
+
+= Balance Totals (includes unconfirmed) =
+
+
+Traceback (most recent call last):
+  File "testbtc.py", line 17, in <module>
+    tx_id = t = w.send_to(w_key1, '0.001 BTC')
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitcoinlib/wallets.py", line 3899, in send_to
+    return self.send(outputs, input_key_id=input_key_id, account_id=account_id, network=network, fee=fee,
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitcoinlib/wallets.py", line 3837, in send
+    transaction = self.transaction_create(output_arr, input_arr, input_key_id, account_id, network, fee,
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitcoinlib/wallets.py", line 3503, in transaction_create
+    selected_utxos = self.select_inputs(amount_total_output + fee_estimate, transaction.network.dust_amount,
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitcoinlib/wallets.py", line 3363, in select_inputs
+    raise WalletError("Create transaction: No unspent transaction outputs found or no key available for UTXO's")
+bitcoinlib.wallets.WalletError: Create transaction: No unspent transaction outputs found or no key available for UTXO's
