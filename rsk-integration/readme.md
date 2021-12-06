@@ -3,7 +3,7 @@ https://developers.rsk.co/libraries/rsk3js/docs/rsk3-react-native/
 
 How to convert Btc to rBtc //https://developers.rsk.co/rsk/rbtc/conversion/networks/testnet/
 
-1.Lo primero es saber cual es la federation address en Btc. Para eso se debe llamar la operacion getFederationAddress en el siguiente contrato de RSK:
+1. Lo primero es saber cual es la federation address en Btc. Para eso se debe llamar la operacion getFederationAddress en el siguiente contrato de RSK:
 
 {
    "name": "Bridge",
