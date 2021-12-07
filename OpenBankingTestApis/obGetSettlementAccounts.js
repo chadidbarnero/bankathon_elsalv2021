@@ -5,14 +5,14 @@
 const fetch = require('sync-fetch')
 var obAuth = require('./obAuth');
 
-function send(token,datosBanco) {
+function send(token,bank_id) {
     var urlbase;
     var urlvariable;
     urlbase="https://obp-apisandbox.bancohipotecario.com.sv/"
-    urlvariable = "obp/v4.0.0/banks";
+    urlvariable = "obp/v4.0.0/banks/"+bank_id+"/settlement-accounts";
     var ItemJSON;
     return fetch(urlbase+urlvariable, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      method: 'GET', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
       credentials: 'same-origin', // include, *same-origin, omit
@@ -22,10 +22,12 @@ function send(token,datosBanco) {
       },
       redirect: 'follow', // manual, *follow, error
       referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: datosBanco // body data type must match "Content-Type" header
+      //body: JSON.stringify(data) // body data type must match "Content-Type" header
     }).json();
   }
-var datosBanco = '{"id":"tlan3","short_name":"Test3Tlan ","full_name":"Test3Tlan","logo":"logo","website":"www.opentla.com","bank_routings":[{"scheme":"Bank_ID","address":"tlan3"}],"attributes":[{"name":"ACCOUNT_MANAGEMENT_FEE","value":"5000000"},{"name":"MIN_SAVING_AMOUNT","value":"1000000"}]}';
+
+var bank_id = 'tlan3'
 var token = obAuth.auth()
-var resp = send(token['token'],datosBanco);
+var resp = send(token['token'],bank_id);
 console.log(resp);
+
