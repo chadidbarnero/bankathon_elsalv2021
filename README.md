@@ -12,3 +12,7 @@ A python script using bitcoinlib and Fauna DB for basic operations on a bitcoinl
 Component 3:
 
 OpenBanking APIs test for basic operations on a bank using js
+
+Component 4:
+
+Rsk integration: 1. Convert BTC to rBTC. 2. Create multi-sig wallet to be used as the community bank account. 3. Send RSK transactions to lend rBTC for yield.
